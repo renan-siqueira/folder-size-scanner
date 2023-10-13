@@ -1,0 +1,26 @@
+|- /logs
+|- /src
+    |- __init__.py
+    |- /core
+        |- __init__.py
+        |- core.py
+    |- /gui
+        |- __init__.py
+        |- gui.py
+    |- /modules
+        |- __init__.py
+        |- cli.py
+        |- formatter.py
+        |- logger.py
+        |- scanner.py
+    |- /settings
+        |- __init__.py
+        |- settings.py
+    |- /utils
+        |- __init__.py
+        |- utils.py
+|- .gitignore
+|- LICENSE
+|- README.md
+|- run.py
+|- structure.txt
