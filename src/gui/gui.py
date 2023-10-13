@@ -7,7 +7,7 @@ from src.core.core import run_scan
 
 def start_gui():
     window = tk.Tk()
-    window.title(settings.WINDOW_TITLE)
+    window.title(f"{settings.WINDOW_TITLE} - {settings.APP_VERSION}")
     window.geometry(settings.WINDOW_SIZE)
 
     def select_folder():
@@ -25,9 +25,6 @@ def start_gui():
     tk.Label(window, text=settings.MESSAGE_GET_RELEVANT_SIZE).pack(pady=10)
     size_entry = tk.Entry(window, width=50)
     size_entry.pack(pady=10)
-
-    result_frame = tk.Frame(window, pady=20)
-    result_frame.pack(fill="both", expand=True)
 
     def on_scan_click():
         folder_path = path_entry.get()
@@ -48,8 +45,7 @@ def start_gui():
     scan_button = tk.Button(window, text="Start Scan", command=on_scan_click)
     scan_button.pack(pady=20)
 
+    result_frame = tk.Frame(window, pady=20)
+    result_frame.pack(fill="both", expand=True)
+
     window.mainloop()
-
-
-if __name__ == '__main__':
-    start_gui()
