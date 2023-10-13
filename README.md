@@ -24,9 +24,9 @@ This tool offers both a command-line interface and a graphical user interface.
 1. Clone the repository.
 2. Navigate to the project directory.
 3. Run `run.py`.
-   ```bash
-   python run.py
-   ```
+```bash
+python run.py
+```
 
 ### Command-Line Interface (CLI):
 
