@@ -17,12 +17,12 @@ def run_cli_mode():
 
 def main():
     try:
-        use_gui = input(settings.MESSAGE_USE_GUI).strip().lower() == 'y'
-        if use_gui:
+        cli_mode = input(settings.MESSAGE_USE_GUI).strip().lower() == 'n'
+        if cli_mode:
+            run_cli_mode()
+        else:
             from src.gui import gui
             gui.start_gui()
-        else:
-            run_cli_mode()
     except ImportError:
         run_cli_mode()
 
